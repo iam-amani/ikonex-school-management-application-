@@ -44,7 +44,7 @@ A system built for managing students, class streams, subjects, scores, and gener
 | Database | MySQL | Relational data, strong constraint support |
 | PDF Generation | jsPDF + AutoTable | Client-side, no extra server dependency |
 | Version Control | Git + GitHub | Industry standard |
-| Deployment | Railway (backend + DB) + Netlify (frontend) | Free tier, GitHub integration |
+| Deployment | Render (backend + DB) + Netlify (frontend) | Free tier, GitHub integration |
 
 ---
 
@@ -60,7 +60,7 @@ A system built for managing students, class streams, subjects, scores, and gener
                │ HTTP/JSON (REST API)
                │ fetch() calls
 ┌──────────────▼──────────────────────┐
-│         BACKEND (Railway)            │
+│         BACKEND (Render)            │
 │   Node.js + Express.js               │
 │   Pattern: Route → Controller → DB   │
 │   cors() for cross-origin requests   │
@@ -68,7 +68,7 @@ A system built for managing students, class streams, subjects, scores, and gener
                │ mysql2/promise
                │ connection pool
 ┌──────────────▼──────────────────────┐
-│         DATABASE (Railway MySQL)     │
+│         DATABASE (Aiven MySQL)     │
 │   6 tables, FK constraints           │
 │   UNIQUE KEY prevents duplicate scores│
 │   Grading scale in grade_config table│

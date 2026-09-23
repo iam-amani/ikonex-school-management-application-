@@ -235,7 +235,7 @@ Then paste the contents of `backend/db/schema.sql`
 ### Step 5 — Start the backend
 ```bash
 cd backend
-node server.js
+npm start
 ```
 
 You should see:
